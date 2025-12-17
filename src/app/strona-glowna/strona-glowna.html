@@ -1,0 +1,33 @@
+<div class="search-container">
+  <div class="search-field">
+    <label>Gdzie lecimy?</label>
+    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+    <datalist id="destinations">
+      @for (kraj of listaKrajow; track kraj) {
+        <option [value]="kraj"></option>
+      }
+    </datalist>
+  </div>
+
+  <div class="search-field">
+    <label>Typ wakacji</label>
+    <input type="text" list="types" placeholder="Wybierz rodzaj...">
+    <datalist id="types">
+      @for (typ of listaTypow; track typ) {
+        <option [value]="typ"></option>
+      }
+    </datalist>
+  </div>
+
+  <div class="search-field">
+    <label>Od kiedy?</label>
+    <input type="date">
+  </div>
+
+  <div class="search-field">
+    <label>Do kiedy?</label>
+    <input type="date">
+  </div>
+  
+  <button class="search-btn">Szukaj ofert</button>
+</div>

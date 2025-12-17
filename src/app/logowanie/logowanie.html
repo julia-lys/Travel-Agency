@@ -1,0 +1,18 @@
+<div class="login-container">
+  <h2>Zaloguj się do biura podróży</h2>
+  
+  <div class="form-group">
+    <label for="login">Login lub E-mail:</label>
+    <input type="text" id="login" [(ngModel)]="login" placeholder="Wpisz swój login">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Hasło:</label>
+    <input type="password" id="password" [(ngModel)]="haslo" placeholder="Wpisz hasło">
+  </div>
+
+  <div class="button-row">
+    <button class="btn-login" (click)="onLogin()">Zaloguj się</button>
+    <button class="btn-register" routerLink="/rejestracja">Zarejestruj się</button>
+  </div>
+</div>
