@@ -1,1 +1,17 @@
-<p>oferta-szczegoly works!</p>
+@if (oferta) {
+  <div class="container-ogloszenia">
+    <h1>{{ oferta.tytul }}</h1>
+    <img [src]="oferta.obrazekUrl" class="foto-duza">
+    
+    <div class="szczegoly">
+      <p class="cena">Cena: {{ oferta.cena }} zł / osoba</p>
+      <div class="opis-dlugi">
+        <h3>O wycieczce:</h3>
+        <p>{{ oferta.opisDlugi }}</p>
+      </div>
+    </div>
+  
+  </div>
+} @else {
+  <p>Nie znaleziono takiej oferty.</p>
+}

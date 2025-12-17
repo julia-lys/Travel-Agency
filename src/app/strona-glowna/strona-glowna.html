@@ -31,3 +31,20 @@
   
   <button class="search-btn">Szukaj ofert</button>
 </div>
+
+<section class="featured-section">
+  <h2>Nasze Bestsellery</h2>
+  <div class="oferty-grid">
+    @for (oferta of najlepszeOferty; track oferta.id) {
+      <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
+        <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
+        <div class="karta-tresc">
+          <h3>{{ oferta.tytul }}</h3>
+          <p>{{ oferta.opisKrotki }}</p>
+          <p class="cena">{{ oferta.cena }} zł</p>
+        </div>
+      </div>
+    }
+  </div>
+  
+</section>

@@ -1,0 +1,25 @@
+.oferty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.karta-oferty {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.karta-oferty:hover {
+  transform: scale(1.03);
+}
+
+.karta-oferty img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
