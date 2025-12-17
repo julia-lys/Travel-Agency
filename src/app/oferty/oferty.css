@@ -6,8 +6,9 @@
 }
 
 .karta-oferty {
+  background-color: #ffffff;
   cursor: pointer;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;

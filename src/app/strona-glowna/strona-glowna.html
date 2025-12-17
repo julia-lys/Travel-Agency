@@ -1,50 +1,52 @@
 <div class="search-container">
-  <div class="search-field">
-    <label>Gdzie lecimy?</label>
-    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
-    <datalist id="destinations">
-      @for (kraj of listaKrajow; track kraj) {
-        <option [value]="kraj"></option>
-      }
-    </datalist>
+    <div class="search-field">
+      <label>Gdzie lecimy?</label>
+      <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+      <datalist id="destinations">
+        @for (kraj of listaKrajow; track kraj) {
+          <option [value]="kraj"></option>
+        }
+      </datalist>
+    </div>
+
+    <div class="search-field">
+      <label>Typ wakacji</label>
+      <input type="text" list="types" placeholder="Wybierz rodzaj...">
+      <datalist id="types">
+        @for (typ of listaTypow; track typ) {
+          <option [value]="typ"></option>
+        }
+      </datalist>
+    </div>
+
+    <div class="search-field">
+      <label>Od kiedy?</label>
+      <input type="date">
+    </div>
+
+    <div class="search-field">
+      <label>Do kiedy?</label>
+      <input type="date">
+    </div>
+    
+    <button class="search-btn">Szukaj ofert</button>
   </div>
 
-  <div class="search-field">
-    <label>Typ wakacji</label>
-    <input type="text" list="types" placeholder="Wybierz rodzaj...">
-    <datalist id="types">
-      @for (typ of listaTypow; track typ) {
-        <option [value]="typ"></option>
-      }
-    </datalist>
-  </div>
-
-  <div class="search-field">
-    <label>Od kiedy?</label>
-    <input type="date">
-  </div>
-
-  <div class="search-field">
-    <label>Do kiedy?</label>
-    <input type="date">
-  </div>
-  
-  <button class="search-btn">Szukaj ofert</button>
-</div>
-
-<section class="featured-section">
-  <h2>Nasze Bestsellery</h2>
-  <div class="oferty-grid">
-    @for (oferta of najlepszeOferty; track oferta.id) {
-      <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
-        <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
-        <div class="karta-tresc">
-          <h3>{{ oferta.tytul }}</h3>
-          <p>{{ oferta.opisKrotki }}</p>
-          <p class="cena">{{ oferta.cena }} zł</p>
+  <section class="featured-section">
+    <div class="bestsellery">
+      <p>Nasze najlepsze destynacje</p>
+    </div>
+    <div class="oferty-grid">
+      @for (oferta of najlepszeOferty; track oferta.id) {
+        <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
+          <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
+          <div class="karta-tresc">
+            <h3>{{ oferta.tytul }}</h3>
+            <p>{{ oferta.opisKrotki }}</p>
+            <p class="cena">{{ oferta.cena }} zł</p>
+          </div>
         </div>
-      </div>
-    }
-  </div>
-  
-</section>
+      }
+    </div>
+    
+  </section>
