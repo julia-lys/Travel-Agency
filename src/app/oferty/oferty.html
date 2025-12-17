@@ -1,1 +1,11 @@
-<p>oferty works!</p>
+<div class="oferty-grid">
+  @for (oferta of listaOfert; track oferta.id) {
+    <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
+      <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
+      <h3>{{ oferta.tytul }}</h3>
+      <p>{{ oferta.opisKrotki }}</p>
+      <p class="cena">{{ oferta.cena }} zł</p>
+      
+    </div>
+  }
+</div>
