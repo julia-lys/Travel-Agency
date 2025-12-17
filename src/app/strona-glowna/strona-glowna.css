@@ -23,3 +23,64 @@
   height: 180px;
   object-fit: cover;
 }
+
+.home-wrapper {
+  display: flex;
+  justify-content: center; /* Środkuje wyszukiwarkę w poziomie */
+  padding: 50px 20px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: center;      
+  align-items: flex-end;       
+  gap: 20px;                   
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;          
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+  max-width: 1000px;            
+  width: 90%;                 
+  margin: 0 auto;              
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;       
+  flex: 1;                     
+  min-width: 180px;             
+}
+
+.search-field label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #333;
+}
+
+.search-field input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.search-btn {
+  background-color: #43b7ff;    /* Żółty kolor biur podróży */
+  color: #ffffff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #0056e0;
+  transform: translateY(-2px);  
+}
