@@ -1,22 +1,15 @@
 export const KRAJE = [
-  'Grecja',
-  'Hiszpania',
+  'Andora',
+  'Czechy',
   'Egipt',
-  'Malediwy',
-  'Turcja',
-  'Włochy',
-  'Chorwacja',
-  'Tajlandia',
-  'Meksyk',
-  'Dominikana',
-  'Bułgaria',
-  'Cypr'
+  'Francja',
+  'Grecja',
+  'Holandia',
+  'Liechtenstein',
+  'Luxemburg',
+  'Monako',
+  'Niemcy',
+  'Portugalia',
+  'Włochy'
 ];
 
-export const TYPY_WAKACJI = [
-  'All Inclusive',
-  'Last Minute',
-  'Objazdowe',
-  'City Break',
-  'Narty i Snowboard'
-];

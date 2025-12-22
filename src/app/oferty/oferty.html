@@ -1,11 +1,45 @@
-<div class="oferty-grid">
-  @for (oferta of listaOfert; track oferta.id) {
-    <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
-      <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
-      <h3>{{ oferta.tytul }}</h3>
-      <p>{{ oferta.opisKrotki }}</p>
-      <p class="cena">{{ oferta.cena }} zł</p>
-      
-    </div>
-  }
+<div class="main-container search-card-style">
+  <div class="search-field">
+    <label>Gdzie lecimy?</label>
+    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+    <datalist id="destinations">
+      @for (kraj of listaKrajow; track kraj) {
+        <option [value]="kraj"></option>
+      }
+    </datalist>
+  </div>
+
+  <div class="search-field">
+    <label>W ile osób?</label>
+    <input type="number" min="1" max="50" value="1" placeholder="1">
+  </div>
+
+  <div class="search-field">
+    <label>Od kiedy?</label>
+    <input type="date">
+  </div>
+
+  <div class="search-field">
+    <label>Do kiedy?</label>
+    <input type="date">
+  </div>
+  
+  <button class="search-btn">Szukaj ofert</button>
 </div>
+
+
+<div class="main-container">
+   <div class="oferty-grid">
+    @for (oferta of listaOfert; track oferta.id) {
+      <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
+        <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
+        <div class="karta-tresc">
+            <h3>{{ oferta.tytul }}</h3>
+            <p>{{ oferta.opisKrotki }}</p>
+            <p class="cena">{{ oferta.cena }} zł</p>
+          </div>
+      </div>
+    }
+  </div>
+</div>
+ 

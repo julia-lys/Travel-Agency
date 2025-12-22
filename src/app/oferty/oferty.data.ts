@@ -11,96 +11,96 @@ export const OFERTY: Oferta[] = [
   {
     id: 1,
     tytul: 'Gorąca Grecja',
-    opisKrotki: 'Piaszczyste plaże i błękitne morze.',
-    opisDlugi: 'Pełny opis wycieczki do Grecji z planem zwiedzania Aten i wypoczynkiem na Krecie...',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2500,
     obrazekUrl: 'grecja.jpg'
   },
   {
     id: 2,
-    tytul: 'Tajemniczy Egipt',
-    opisKrotki: 'Piramidy, sfinks i nurkowanie!',
-    opisDlugi: 'Niesamowita przygoda w kraju faraonów. All inclusive w Hurghadzie...',
+    tytul: 'Epicki Egipt',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 1900,
     obrazekUrl: 'egipt.jpg'
   },
   {
     id: 3,
-    tytul: 'Romantyczne Włochy',
-    opisKrotki: 'Urocze domki i pyszne jedzenie.',
-    opisDlugi: 'mamma mia',
+    tytul: 'Wyjątkowe Włochy',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 1900,
     obrazekUrl: 'wlochy.jpg'
   },
   {
     id: 4,
-    tytul: 'Zajwiskowa Portugalia',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Piękna Portugalia',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'portugalia.jpg'
   },
   {
     id: 5,
-    tytul: 'Francja elegancja',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Finezycja Francja',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'francja.jpg'
   },
   {
     id: 6,
-    tytul: 'Niemcy',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Niesamowite Niemcy',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'niemcy.jpg'
   },
   {
     id: 7,
-    tytul: 'Czechy',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Cudowne Czechy',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'czechy.jpg'
   },
    {
     id: 8,
-    tytul: 'Luxemburg',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Luksusowy Luxemburg',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'luxemburg.jpg'
   },
    {
     id: 9,
-    tytul: 'Holandia',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Hazardowa Holandia',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'holandia.jpg'
   },
    {
     id: 10,
-    tytul: 'Monako',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Malownicze Monako',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'monako.jpg'
   },
    {
     id: 11,
-    tytul: 'Andora',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Atrakcyjna Andora',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'andora.jpg'
   },
    {
     id: 12,
-    tytul: 'Liechtenstein',
-    opisKrotki: 'Opis krotki',
-    opisDlugi: 'Opis dlugi',
+    tytul: 'Legendarny Liechtenstein',
+    opisKrotki: 'Lorem ipsum dolor sit amet.',
+    opisDlugi: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue libero condimentum, auctor nunc ut, vehicula diam. Nam fringilla justo ac augue fringilla, non fringilla urna rutrum. Praesent id elit lobortis, convallis neque a, porta diam. Vivamus facilisis, arcu rhoncus malesuada scelerisque, urna massa semper tellus, ut condimentum sapien orci et nisl. Pellentesque nec nulla tincidunt, condimentum odio faucibus, aliquet erat. Ut vestibulum congue sapien, quis elementum nulla accumsan quis. Nunc tincidunt lectus eleifend molestie eleifend. Aenean molestie quam lectus, id vulputate libero facilisis eu. Praesent dui nisi, pretium a pulvinar eu, pellentesque nec mi. In a ipsum tempus, feugiat lectus rhoncus, commodo sem. Nulla massa erat, rutrum et commodo in, luctus id magna. Nam eleifend quam quis libero sollicitudin, nec auctor nunc pellentesque. Praesent viverra quis metus ut molestie. Nunc a fringilla ipsum, eu rhoncus nulla. Nulla posuere mollis felis, eu ornare ante sagittis quis.',
     cena: 2000,
     obrazekUrl: 'liechtenstein.jpg'
   }

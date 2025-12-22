@@ -1,17 +1,28 @@
 @if (oferta) {
-  <div class="container-ogloszenia">
-    <h1>{{ oferta.tytul }}</h1>
-    <img [src]="oferta.obrazekUrl" class="foto-duza">
+  <div class="main-container szczegoly-wrapper">
+    <h1 class="tytul-oferty">{{ oferta.tytul }}</h1>
     
-    <div class="szczegoly">
-      <p class="cena">Cena: {{ oferta.cena }} zł / osoba</p>
-      <div class="opis-dlugi">
-        <h3>O wycieczce:</h3>
-        <p>{{ oferta.opisDlugi }}</p>
-      </div>
+    <div class="foto-sekcja">
+      <img [src]="oferta.obrazekUrl" class="foto-podglad" [alt]="oferta.tytul">
     </div>
-  
+
+    <div class="kafelek-cena">
+      <p>Cena za osobę:</p>
+      <span class="kwota-biala">{{ oferta.cena }} zł</span>
+    </div>
+
+    <div class="kafelek-opis">
+      <h3>O wycieczce</h3>
+      <p>{{ oferta.opisDlugi }}</p>
+    </div>
+
+    <div class="akcje-oferty">
+      <button class="btn-ulubione">❤️ Dodaj do ulubionych</button>
+      <button class="search-btn btn-koszyk">🛒 Dodaj do koszyka</button>
+    </div>
   </div>
 } @else {
-  <p>Nie znaleziono takiej oferty.</p>
+  <div class="main-container">
+    <p>Nie znaleziono takiej oferty.</p>
+  </div>
 }

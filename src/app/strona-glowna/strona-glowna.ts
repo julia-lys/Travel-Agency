@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KRAJE, TYPY_WAKACJI } from '../destynacje.data';
+import { KRAJE } from '../destynacje.data';
 import { OFERTY, Oferta } from '../oferty/oferty.data';
 import { RouterLink } from '@angular/router';
 @Component({
@@ -16,5 +16,4 @@ export class StronaGlowna {
   }
 
   listaKrajow = KRAJE;
-  listaTypow = TYPY_WAKACJI;
 }

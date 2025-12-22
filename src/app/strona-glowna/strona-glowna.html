@@ -1,41 +1,38 @@
-<div class="search-container">
-    <div class="search-field">
-      <label>Gdzie lecimy?</label>
-      <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
-      <datalist id="destinations">
-        @for (kraj of listaKrajow; track kraj) {
-          <option [value]="kraj"></option>
-        }
-      </datalist>
-    </div>
-
-    <div class="search-field">
-      <label>Typ wakacji</label>
-      <input type="text" list="types" placeholder="Wybierz rodzaj...">
-      <datalist id="types">
-        @for (typ of listaTypow; track typ) {
-          <option [value]="typ"></option>
-        }
-      </datalist>
-    </div>
-
-    <div class="search-field">
-      <label>Od kiedy?</label>
-      <input type="date">
-    </div>
-
-    <div class="search-field">
-      <label>Do kiedy?</label>
-      <input type="date">
-    </div>
-    
-    <button class="search-btn">Szukaj ofert</button>
+<div class="main-container search-card-style">
+  <div class="search-field">
+    <label>Gdzie lecimy?</label>
+    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+    <datalist id="destinations">
+      @for (kraj of listaKrajow; track kraj) {
+        <option [value]="kraj"></option>
+      }
+    </datalist>
   </div>
 
-  <section class="featured-section">
+  <div class="search-field">
+    <label>W ile osób?</label>
+    <input type="number" min="1" max="50" value="1" placeholder="1">
+  </div>
+
+  <div class="search-field">
+    <label>Od kiedy?</label>
+    <input type="date">
+  </div>
+
+  <div class="search-field">
+    <label>Do kiedy?</label>
+    <input type="date">
+  </div>
+  
+  <button class="search-btn">Szukaj ofert</button>
+</div>
+
+<section class="featured-section">
+  <div class="main-container">
     <div class="bestsellery">
       <p>Nasze najlepsze destynacje</p>
     </div>
+
     <div class="oferty-grid">
       @for (oferta of najlepszeOferty; track oferta.id) {
         <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
@@ -48,5 +45,5 @@
         </div>
       }
     </div>
-    
-  </section>
+  </div>
+</section>
