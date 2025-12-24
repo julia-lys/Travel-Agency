@@ -1,35 +1,41 @@
-<div class="register-container">
-  <h2>Utwórz konto w Biurze Podróży</h2>
-  
-  <div class="form-group">
-    <label>Imię:</label>
-    <input type="text" [(ngModel)]="userData.imie" placeholder="Wpisz imię">
-  </div>
+<div class="register-wrapper">
+  <div class="register-container">
+    <h2>Utwórz konto w Biurze Podróży</h2>
+    
+    <form class="register-form">
+      <div class="form-group">
+        <label>Imię:</label>
+        <input type="text" [(ngModel)]="userData.imie" placeholder="Wpisz imię">
+      </div>
 
-  <div class="form-group">
-    <label>Nazwisko:</label>
-    <input type="text" [(ngModel)]="userData.nazwisko" placeholder="Wpisz nazwisko">
-  </div>
+      <div class="form-group">
+        <label>Nazwisko:</label>
+        <input type="text" [(ngModel)]="userData.nazwisko" placeholder="Wpisz nazwisko">
+      </div>
 
-  <div class="form-group">
-    <label>Data urodzenia:</label>
-    <input type="date" [(ngModel)]="userData.dataUrodzenia">
-  </div>
+      <div class="form-group">
+        <label>Data urodzenia:</label>
+        <input type="date" [(ngModel)]="userData.dataUrodzenia">
+      </div>
 
-  <div class="form-group">
-    <label>E-mail:</label>
-    <input type="email" [(ngModel)]="userData.email" placeholder="email@przyklad.pl">
-  </div>
+      <div class="form-group">
+        <label>E-mail:</label>
+        <input type="email" [(ngModel)]="userData.email" placeholder="email@przyklad.pl">
+      </div>
 
-  <div class="form-group">
-    <label>Hasło:</label>
-    <input type="password" [(ngModel)]="userData.haslo" placeholder="Minimum 8 znaków">
-  </div>
+      <div class="form-group">
+        <label>Hasło:</label>
+        <input type="password" [(ngModel)]="userData.haslo" placeholder="Minimum 8 znaków">
+      </div>
 
-  <div class="form-group">
-    <label>Powtórz hasło:</label>
-    <input type="password" [(ngModel)]="userData.powtorzHaslo" placeholder="Wpisz hasło ponownie">
-  </div>
+      <div class="form-group">
+        <label>Powtórz hasło:</label>
+        <input type="password" [(ngModel)]="userData.powtorzHaslo" placeholder="Wpisz hasło ponownie">
+      </div>
 
-  <button class="btn-submit" (click)="utworzKonto()">Utwórz konto</button>
+      <button type="button" class="btn-submit" (click)="utworzKonto()">Utwórz konto</button>
+    </form>
+
+    <p class="login-link">Masz już konto? <a routerLink="/logowanie">Zaloguj się tutaj</a></p>
+  </div>
 </div>

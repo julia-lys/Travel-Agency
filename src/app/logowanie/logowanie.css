@@ -1,0 +1,137 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.login-container h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #35ddff;
+  box-shadow: 0 0 0 3px rgba(53, 221, 255, 0.1);
+}
+
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-login,
+.btn-register {
+  flex: 1;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-login {
+  background-color: #35ddff;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #02afd2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(53, 221, 255, 0.4);
+}
+
+.btn-register {
+  background-color: transparent;
+  color: #35ddff;
+  border: 2px solid #35ddff;
+}
+
+.btn-register:hover {
+  background-color: #f0f7ff;
+  color: #02afd2;
+  border-color: #02afd2;
+}
+
+.register-link {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
+.register-link a {
+  color: #35ddff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.register-link a:hover {
+  color: #02afd2;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .button-row {
+    flex-direction: column;
+  }
+}
