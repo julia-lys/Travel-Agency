@@ -1,4 +1,3 @@
-
 .about-container {
   max-width: 850px;
   margin: 0 auto 200px auto;
@@ -8,16 +7,19 @@
 .about-header {
   text-align: center;
   margin-bottom: 30px;
-  color: #fff; 
+  /* ZMIANA: używamy zmiennej, aby nagłówek był czytelny na gradiencie tła */
+  color: var(--text-main); 
 }
 
-
 .about-content {
-  background-color: #ffffff;
+  /* ZMIANA: tło kafelka ze zmiennej */
+  background-color: var(--card-bg);
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  /* ZMIANA: cień dostosowany do trybu dark/light */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden; 
   padding: 40px 40px 0 40px; 
+  transition: background-color 0.3s ease;
 }
 
 .about-section {
@@ -25,26 +27,30 @@
 }
 
 .about-section h2 {
-  color: #000000;
+  /* ZMIANA: kolor nagłówka sekcji */
+  color: var(--text-main);
   display: inline-block;
   margin-bottom: 15px;
 }
 
 .about-text {
   line-height: 1.6;
-  color: #444;
+  /* ZMIANA: kolor tekstu opisu */
+  color: var(--text-secondary);
 }
 
 .about-image-wrapper {
-  margin: 0 -40px; 
   margin-top: 40px;
+  margin-bottom: 40px; 
+  text-align: center;  
 }
 
 .about-bottom-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover; 
+  max-width: 100%;    
+  height: auto;        
+  border-radius: 10px; 
   display: block;
+  margin: 0 auto;      
 }
 
 .about-list {
@@ -54,5 +60,19 @@
 
 .about-list li {
   padding: 8px 0;
-  border-bottom: 1px solid #eee;
+  /* ZMIANA: kolor linii oddzielającej punkty listy */
+  border-bottom: 1px solid var(--border-color);
+  /* ZMIANA: kolor tekstu w liście */
+  color: var(--text-secondary);
+}
+
+/* Dodatkowy styl dla pogrubień w liście, by nie zniknęły w dark mode */
+.about-list li strong {
+  color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 20px;
+  }
 }

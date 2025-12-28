@@ -5,6 +5,10 @@
   <button routerLink="/logowanie">Logowanie</button>
   <button routerLink="/koszyk">Koszyk</button>
   <button routerLink="/ulubione">Ulubione</button>
+  <button (click)="toggleTheme()" class="theme-toggle">
+  {{ isDarkMode ? 'Tryb Jasny ☀️' : 'Tryb Ciemny 🌙' }}
+</button>
+
 </nav>
 
 <router-outlet></router-outlet>

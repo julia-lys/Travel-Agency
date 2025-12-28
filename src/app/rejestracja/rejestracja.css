@@ -14,16 +14,21 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  background-color: white;
+  /* ZMIANA: użycie zmiennych dla tła i tekstu */
+  background-color: var(--card-bg);
+  color: var(--text-main);
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  /* ZMIANA: dopasowanie cienia do trybu ciemnego */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 90%;
   box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .register-container h2 {
-  color: #333;
+  /* ZMIANA: kolor nagłówka */
+  color: var(--text-main);
   font-size: 1.8rem;
   margin-bottom: 30px;
   text-align: center;
@@ -44,29 +49,35 @@
 }
 
 .form-group label {
-  color: #333;
+  /* ZMIANA: kolor etykiet */
+  color: var(--text-main);
   font-weight: 600;
   font-size: 0.95rem;
 }
 
 .form-group input {
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  /* ZMIANA: kolory inputa dla dark mode */
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
   font-family: inherit;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #35ddff;
-  box-shadow: 0 0 0 3px rgba(53, 221, 255, 0.1);
+  /* ZMIANA: użycie zmiennej akcentu */
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(53, 221, 255, 0.2);
 }
 
 .btn-submit {
   padding: 13px 20px;
-  background-color: #35ddff;
+  /* ZMIANA: kolor głównego przycisku */
+  background-color: var(--accent-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -79,27 +90,31 @@
 }
 
 .btn-submit:hover {
-  background-color: #02afd2;
+  /* ZMIANA: kolor hover ze zmiennej */
+  background-color: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(53, 221, 255, 0.4);
 }
 
 .login-link {
   text-align: center;
-  color: #666;
+  /* ZMIANA: kolor tekstu pomocniczego */
+  color: var(--text-muted);
   margin-top: 20px;
   font-size: 0.95rem;
 }
 
 .login-link a {
-  color: #35ddff;
+  /* ZMIANA: kolor linku */
+  color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .login-link a:hover {
-  color: #02afd2;
+  /* ZMIANA: kolor linku hover */
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 

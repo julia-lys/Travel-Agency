@@ -1,13 +1,14 @@
-
 .main-container {
-  background-color: white;
-  max-width: 1100px;        
-  width: 90%;              
-  margin: 30px auto;      
+  /* ZMIANA: dynamiczne tło i przejście */
+  background-color: var(--card-bg);
+  max-width: 1100px;         
+  width: 90%;               
+  margin: 30px auto;       
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   box-sizing: border-box;   
+  transition: background-color 0.3s ease;
 }
 
 .search-card-style {
@@ -26,7 +27,8 @@
 .bestsellery p {
   font-size: 2.2rem;
   font-weight: 500;
-  color: #222;
+  /* ZMIANA: kolor napisu Bestsellery */
+  color: var(--text-main);
   text-transform: uppercase;
   margin: 0;
 }
@@ -39,17 +41,20 @@
 }
 
 .karta-oferty {
-  background-color: #ffffff;
+  /* ZMIANA: tło karty i obramowanie */
+  background-color: var(--card-bg);
+  color: var(--text-main);
   cursor: pointer;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .karta-oferty:hover {
   transform: translateY(-5px);
+  border-color: var(--accent-color);
 }
 
 .karta-oferty img {
@@ -66,7 +71,8 @@
 .karta-tresc h3 {
   font-size: 1.3rem;   
   margin-bottom: 10px;  
-  color: #333;
+  /* ZMIANA: kolor tytułu na kafelku */
+  color: var(--text-main);
   font-weight: 600;
 }
 
@@ -80,17 +86,27 @@
 .search-field label {
   font-weight: bold;
   margin-bottom: 8px;
-  color: #333;
+  /* ZMIANA: kolor labela */
+  color: var(--text-main);
 }
 
 .search-field input {
   padding: 12px;
-  border: 1px solid #ddd;
+  /* ZMIANA: kolory inputa */
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .search-btn {
-  background-color: #35ddff;
+  background-color: var(--accent-color);
   color: white;
   border: none;
   padding: 13px 30px;
@@ -101,5 +117,5 @@
 }
 
 .search-btn:hover {
-  background-color: #02afd2;
+  background-color: var(--accent-hover);
 }

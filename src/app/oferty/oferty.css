@@ -1,12 +1,15 @@
 .main-container {
-  background-color: white;
-  max-width: 1100px;        
-  width: 90%;              
-  margin: 30px auto;      
+  /* ZMIANA: tło kontenera głównego */
+  background-color: var(--card-bg);
+  max-width: 1100px;         
+  width: 90%;               
+  margin: 30px auto;       
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  /* ZMIANA: cień dostosowany do trybu */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   box-sizing: border-box;   
+  transition: background-color 0.3s ease;
 }
 
 .search-card-style {
@@ -16,7 +19,6 @@
   align-items: flex-end;
   gap: 20px;
 }
-
 
 .search-field {
   display: flex;
@@ -28,17 +30,28 @@
 .search-field label {
   font-weight: bold;
   margin-bottom: 8px;
-  color: #333;
+  /* ZMIANA: kolor etykiety wyszukiwarki */
+  color: var(--text-main);
 }
 
 .search-field input {
   padding: 12px;
-  border: 1px solid #ddd;
+  /* ZMIANA: kolory inputa wyszukiwarki */
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .search-btn {
-  background-color: #35ddff;
+  /* ZMIANA: kolor przycisku ze zmiennej */
+  background-color: var(--accent-color);
   color: white;
   border: none;
   padding: 13px 30px;
@@ -49,7 +62,8 @@
 }
 
 .search-btn:hover {
-  background-color: #02afd2;
+  /* ZMIANA: kolor hover ze zmiennej */
+  background-color: var(--accent-hover);
 }
 
 .oferty-grid {
@@ -60,17 +74,21 @@
 }
 
 .karta-oferty {
-  background-color: #ffffff;
+  /* ZMIANA: tło karty i obramowanie */
+  background-color: var(--card-bg);
+  color: var(--text-main);
   cursor: pointer;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.3s, border-color 0.3s;
 }
 
 .karta-oferty:hover {
   transform: scale(1.03);
+  /* Opcjonalnie: lekkie podświetlenie obramowania na hover */
+  border-color: var(--accent-color);
 }
 
 .karta-oferty img {
@@ -87,6 +105,7 @@
 .karta-tresc h3 {
   font-size: 1.3rem;   
   margin-bottom: 10px;  
-  color: #333;
+  /* ZMIANA: kolor tytułu na karcie */
+  color: var(--text-main);
   font-weight: 600;
 }
