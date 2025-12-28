@@ -11,15 +11,17 @@ import { RouterLink } from '@angular/router';
 export class Logowanie {
   login: string = '';
   haslo: string = '';
+  probowanoZalogowac: boolean = false;
 
   onLogin() {
-    console.log('Próba logowania:', this.login, this.haslo);
-    alert(`Logowanie użytkownika: ${this.login}`);
-  }
+    this.probowanoZalogowac = true;
 
-  onRegister() {
-    console.log('Próba rejestracji');
-    alert('Przenoszenie do formularza rejestracji...');
+    if (!this.login || !this.haslo) {
+      return;
+    }
+
+    
+    alert("Zalogowano użytkownika: " + this.login)
   }
 }
 

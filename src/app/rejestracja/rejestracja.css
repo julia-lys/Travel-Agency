@@ -14,12 +14,10 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  /* ZMIANA: użycie zmiennych dla tła i tekstu */
   background-color: var(--card-bg);
   color: var(--text-main);
   padding: 40px;
   border-radius: 15px;
-  /* ZMIANA: dopasowanie cienia do trybu ciemnego */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   width: 90%;
   box-sizing: border-box;
@@ -27,7 +25,6 @@
 }
 
 .register-container h2 {
-  /* ZMIANA: kolor nagłówka */
   color: var(--text-main);
   font-size: 1.8rem;
   margin-bottom: 30px;
@@ -49,7 +46,6 @@
 }
 
 .form-group label {
-  /* ZMIANA: kolor etykiet */
   color: var(--text-main);
   font-weight: 600;
   font-size: 0.95rem;
@@ -57,7 +53,6 @@
 
 .form-group input {
   padding: 12px 15px;
-  /* ZMIANA: kolory inputa dla dark mode */
   background-color: var(--card-bg);
   color: var(--text-main);
   border: 1px solid var(--border-color);
@@ -69,14 +64,12 @@
 
 .form-group input:focus {
   outline: none;
-  /* ZMIANA: użycie zmiennej akcentu */
   border-color: var(--accent-color);
   box-shadow: 0 0 0 3px rgba(53, 221, 255, 0.2);
 }
 
 .btn-submit {
   padding: 13px 20px;
-  /* ZMIANA: kolor głównego przycisku */
   background-color: var(--accent-color);
   color: white;
   border: none;
@@ -90,7 +83,6 @@
 }
 
 .btn-submit:hover {
-  /* ZMIANA: kolor hover ze zmiennej */
   background-color: var(--accent-hover);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(53, 221, 255, 0.4);
@@ -98,14 +90,13 @@
 
 .login-link {
   text-align: center;
-  /* ZMIANA: kolor tekstu pomocniczego */
   color: var(--text-muted);
   margin-top: 20px;
   font-size: 0.95rem;
 }
 
 .login-link a {
-  /* ZMIANA: kolor linku */
+
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 600;
@@ -113,9 +104,24 @@
 }
 
 .login-link a:hover {
-  /* ZMIANA: kolor linku hover */
   color: var(--accent-hover);
   text-decoration: underline;
+}
+
+.input-error {
+  border: 1px solid #ff4d4d !important;
+  background-color: rgba(255, 77, 77, 0.05);
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.btn-submit {
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {

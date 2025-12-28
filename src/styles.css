@@ -1,22 +1,17 @@
-/* styles.css */
 :root {
-  /* Kolory tła */
   --bg-gradient: linear-gradient(180deg, #ffffff 0%, #c7f6ff 100%);
   --card-bg: #ffffff;
   --secondary-bg: #f9f9f9;
   
-  /* Kolory tekstu */
   --text-main: #222222;
   --text-secondary: #444444;
   --text-muted: #666666;
   
-  /* Akcenty (pozostają podobne lub lekko jaśniejsze w dark mode) */
   --accent-color: #35ddff;
   --accent-hover: #02afd2;
   --border-color: #dddddd;
 }
 
-/* Definicja dla trybu ciemnego */
 body.dark-mode {
   --bg-gradient: linear-gradient(180deg, #2e2e2e 0%, #1a1a1a 100%);
   --card-bg: #1e1e1e;
@@ -26,8 +21,8 @@ body.dark-mode {
   --text-secondary: #cccccc;
   --text-muted: #aaaaaa;
   
-  --accent-color: #35ddff; /* Niebieski zwykle dobrze wygląda też w dark */
-  --accent-hover: #5ee7ff;
+  --accent-color: #02afd2;
+  --accent-hover: #00839d;
   --border-color: #444444;
 }
 
@@ -37,5 +32,5 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text-main);
-  transition: background 0.3s ease; /* Płynne przejście koloru tła */
+  transition: background 0.3s ease;
 }

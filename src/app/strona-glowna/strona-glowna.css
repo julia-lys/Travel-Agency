@@ -1,5 +1,4 @@
 .main-container {
-  /* ZMIANA: dynamiczne tło i przejście */
   background-color: var(--card-bg);
   max-width: 1100px;         
   width: 90%;               
@@ -27,7 +26,6 @@
 .bestsellery p {
   font-size: 2.2rem;
   font-weight: 500;
-  /* ZMIANA: kolor napisu Bestsellery */
   color: var(--text-main);
   text-transform: uppercase;
   margin: 0;
@@ -41,7 +39,6 @@
 }
 
 .karta-oferty {
-  /* ZMIANA: tło karty i obramowanie */
   background-color: var(--card-bg);
   color: var(--text-main);
   cursor: pointer;
@@ -53,7 +50,7 @@
 }
 
 .karta-oferty:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
   border-color: var(--accent-color);
 }
 
@@ -71,7 +68,6 @@
 .karta-tresc h3 {
   font-size: 1.3rem;   
   margin-bottom: 10px;  
-  /* ZMIANA: kolor tytułu na kafelku */
   color: var(--text-main);
   font-weight: 600;
 }
@@ -86,13 +82,11 @@
 .search-field label {
   font-weight: bold;
   margin-bottom: 8px;
-  /* ZMIANA: kolor labela */
   color: var(--text-main);
 }
 
 .search-field input {
   padding: 12px;
-  /* ZMIANA: kolory inputa */
   background-color: var(--card-bg);
   color: var(--text-main);
   border: 1px solid var(--border-color);

@@ -1,9 +1,38 @@
 .navbar {
   display: flex;
-  justify-content: flex-end; 
-  gap: 20px;
-  padding: 15px 50px;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 50px;
   background-color: transparent;
+}
+
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 50px; 
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: none; 
+  padding: 8px 0; 
+  letter-spacing: normal;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .navbar button {
@@ -20,4 +49,19 @@
 
 .navbar button:hover {
   color: var(--accent-color); 
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.theme-icon {
+  width: 24px;   
+  height: 24px;
+  object-fit: contain;
 }

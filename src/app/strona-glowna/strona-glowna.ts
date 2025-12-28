@@ -12,7 +12,7 @@ export class StronaGlowna {
   najlepszeOferty: Oferta[] =[]
   
   ngOnInit() {
-    this.najlepszeOferty = OFERTY.slice(0, 3);
+    this.najlepszeOferty = OFERTY.slice(0, 6);
   }
 
   listaKrajow = KRAJE;

@@ -1,21 +1,24 @@
 .about-container {
-  max-width: 850px;
-  margin: 0 auto 200px auto;
-  padding: 0 100px;
+  max-width: 1100px;
+  width: 90%;               
+  margin: 30px auto;       
+  border-radius: 15px;
+  background-color: var(--card-bg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden; 
+  padding: 40px 40px 0 40px; 
+
 }
 
 .about-header {
   text-align: center;
   margin-bottom: 30px;
-  /* ZMIANA: używamy zmiennej, aby nagłówek był czytelny na gradiencie tła */
   color: var(--text-main); 
 }
 
 .about-content {
-  /* ZMIANA: tło kafelka ze zmiennej */
   background-color: var(--card-bg);
   border-radius: 15px;
-  /* ZMIANA: cień dostosowany do trybu dark/light */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden; 
   padding: 40px 40px 0 40px; 
@@ -27,7 +30,6 @@
 }
 
 .about-section h2 {
-  /* ZMIANA: kolor nagłówka sekcji */
   color: var(--text-main);
   display: inline-block;
   margin-bottom: 15px;
@@ -35,7 +37,6 @@
 
 .about-text {
   line-height: 1.6;
-  /* ZMIANA: kolor tekstu opisu */
   color: var(--text-secondary);
 }
 
@@ -60,13 +61,10 @@
 
 .about-list li {
   padding: 8px 0;
-  /* ZMIANA: kolor linii oddzielającej punkty listy */
   border-bottom: 1px solid var(--border-color);
-  /* ZMIANA: kolor tekstu w liście */
   color: var(--text-secondary);
 }
 
-/* Dodatkowy styl dla pogrubień w liście, by nie zniknęły w dark mode */
 .about-list li strong {
   color: var(--text-main);
 }

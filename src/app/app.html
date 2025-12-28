@@ -1,14 +1,29 @@
 <nav class="navbar">
-  <button routerLink="/strona-glowna">Strona Główna</button>
-  <button routerLink="/oferty">Oferty</button>
-  <button routerLink="/o-nas">O nas</button>
-  <button routerLink="/logowanie">Logowanie</button>
-  <button routerLink="/koszyk">Koszyk</button>
-  <button routerLink="/ulubione">Ulubione</button>
-  <button (click)="toggleTheme()" class="theme-toggle">
-  {{ isDarkMode ? 'Tryb Jasny ☀️' : 'Tryb Ciemny 🌙' }}
-</button>
+  <div class="navbar-logo" routerLink="/strona-glowna">
+  @if (isDarkMode) {
+    <img src="airplane_dark_mode.png" alt="Logo Biura Podróży" class="logo-img">
+  } @else {
+    <img src="airplane.png" alt="Logo Biura Podróży" class="logo-img">
+  }
+  <span class="logo-text">Podróże małe i duże</span>
+  </div>
 
+  <div class="navbar-menu">
+    <button routerLink="/strona-glowna">Strona Główna</button>
+    <button routerLink="/oferty">Oferty</button>
+    <button routerLink="/o-nas">O nas</button>
+    <button routerLink="/logowanie">Logowanie</button>
+    <button routerLink="/koszyk">Koszyk</button>
+    <button routerLink="/ulubione">Ulubione</button>
+    
+    <button (click)="toggleTheme()" class="theme-toggle-btn">
+      @if (isDarkMode) {
+        <img src="light.png" alt="Tryb jasny" class="theme-icon">
+      } @else {
+        <img src="dark.png" alt="Tryb ciemny" class="theme-icon">
+      }
+    </button>
+  </div>
 </nav>
 
 <router-outlet></router-outlet>

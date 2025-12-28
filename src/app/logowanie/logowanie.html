@@ -2,21 +2,41 @@
   <div class="main-container login-container">
     <h2>Zaloguj się do biura podróży</h2>
     
-    <form class="login-form">
-      <div class="form-group">
-        <label for="login">Login lub E-mail:</label>
-        <input type="text" id="login" [(ngModel)]="login" placeholder="Wpisz swój login">
-      </div>
+   <form class="login-form">
+    <div class="form-group">
+      <label for="login">Login lub E-mail:</label>
+      <input 
+        type="text" 
+        id="login" 
+        name="login" 
+        [(ngModel)]="login" 
+        [class.input-error]="probowanoZalogowac && !login"
+        placeholder="Wpisz swój login">
+      
+      @if (probowanoZalogowac && !login) {
+        <span class="error-text">Pole login jest wymagane</span>
+      }
+    </div>
 
-      <div class="form-group">
-        <label for="password">Hasło:</label>
-        <input type="password" id="password" [(ngModel)]="haslo" placeholder="Wpisz hasło">
-      </div>
+    <div class="form-group">
+      <label for="password">Hasło:</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="haslo" 
+        [(ngModel)]="haslo" 
+        [class.input-error]="probowanoZalogowac && !haslo"
+        placeholder="Wpisz hasło">
 
-      <div class="button-row">
-        <button type="button" class="btn-login" (click)="onLogin()">Zaloguj się</button>
-        <button type="button" class="btn-register" routerLink="/rejestracja">Zarejestruj się</button>
-      </div>
-    </form>
+      @if (probowanoZalogowac && !haslo) {
+        <span class="error-text">Pole hasło jest wymagane</span>
+      }
+    </div>
+
+    <div class="button-row">
+      <button type="button" class="btn-login" (click)="onLogin()">Zaloguj się      </button>
+      <button type="button" class="btn-register" routerLink="/rejestracja">Zarejestruj się</button>
+    </div>
+  </form>
   </div>
 </div>
