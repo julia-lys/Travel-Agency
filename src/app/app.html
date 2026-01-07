@@ -27,3 +27,11 @@
 </nav>
 
 <router-outlet></router-outlet>
+
+@if (powiadomienia.wiadomosc()) {
+  <div class="toast-container">
+    <div class="toast">
+      {{ powiadomienia.wiadomosc() }}
+    </div>
+  </div>
+}

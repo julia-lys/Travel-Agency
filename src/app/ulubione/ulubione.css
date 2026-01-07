@@ -1,0 +1,147 @@
+.main-container {
+  background-color: var(--card-bg);
+  max-width: 1100px;         
+  width: 90%;               
+  margin: 30px auto;       
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-sizing: border-box;   
+  transition: background-color 0.3s ease;
+}
+
+.search-card-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.bestsellery {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bestsellery p {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.oferty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
+  justify-content: center;  
+  gap: 30px;
+}
+
+.karta-oferty {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.karta-oferty:hover {
+  transform: scale(1.03);
+  border-color: var(--accent-color);
+}
+
+.karta-oferty img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.karta-tresc {
+  padding: 30px 15px 20px 15px; 
+  text-align: center;
+}
+
+.karta-tresc h3 {
+  font-size: 1.3rem;   
+  margin-bottom: 10px;  
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-field label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.search-field input {
+  padding: 12px;
+  background-color: var(--card-bg);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.search-field input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.brak-wynikow {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.search-btn, .showAll {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-btn:hover, .showAll:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-usun-ulub {
+  margin-top: 15px;
+  background-color: transparent;
+  color: #ff5a5f;
+  border: 1px solid #ff5a5f;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-usun-ulub:hover {
+  background-color: #ff5a5f;
+  color: white;
+}
+
+.cena {
+  font-weight: bold;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}

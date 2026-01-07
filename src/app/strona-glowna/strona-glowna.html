@@ -1,7 +1,14 @@
 <div class="main-container search-card-style">
   <div class="search-field">
     <label>Gdzie lecimy?</label>
-    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+    <input 
+      type="text" 
+      list="destinations" 
+      placeholder="Wpisz cel podróży..."
+      [ngModel]="frazaWpisana()"
+      (ngModelChange)="frazaWpisana.set($event)"
+      (keyup.enter)="szukaj()" 
+    >
     <datalist id="destinations">
       @for (kraj of listaKrajow; track kraj) {
         <option [value]="kraj"></option>
@@ -11,7 +18,7 @@
 
   <div class="search-field">
     <label>W ile osób?</label>
-    <input type="number" min="1" max="50" value="1" placeholder="1">
+    <input type="number" min="1" max="50" value="1">
   </div>
 
   <div class="search-field">
@@ -24,17 +31,21 @@
     <input type="date">
   </div>
   
-  <button class="search-btn">Szukaj ofert</button>
+  <button class="search-btn" (click)="szukaj()">Szukaj ofert</button>
 </div>
 
-<section class="featured-section">
+<section class="featured-section" id="wyniki">
   <div class="main-container">
     <div class="bestsellery">
-      <p>Nasze najlepsze destynacje</p>
+      @if (frazaZatwierdzona()) {
+        <p>Wyniki wyszukiwania</p>
+      } @else {
+        <p>Nasze najlepsze destynacje</p>
+      }
     </div>
 
     <div class="oferty-grid">
-      @for (oferta of najlepszeOferty; track oferta.id) {
+      @for (oferta of filtrowaneOferty(); track oferta.id) {
         <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
           <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
           <div class="karta-tresc">
@@ -42,6 +53,11 @@
             <p>{{ oferta.opisKrotki }}</p>
             <p class="cena">{{ oferta.cena }} zł</p>
           </div>
+        </div>
+      } @empty {
+        <div class="brak-wynikow">
+          <p>Brak ofert w wybranym kierunku.</p>
+          <button class="showAll" (click)="frazaWpisana.set(''); szukaj()">Pokaż wszystkie</button>
         </div>
       }
     </div>

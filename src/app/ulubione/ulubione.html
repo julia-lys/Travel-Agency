@@ -1,1 +1,30 @@
-<p>ulubione works!</p>
+<div class="main-container">
+  <div class="bestsellery">
+    <p>Twoje Ulubione Wycieczki</p>
+  </div>
+
+  <div class="oferty-grid">
+    @for (item of ulubioneService.ulubione(); track item.id) {
+      <div class="karta-oferty">
+        <div [routerLink]="['/oferty', item.id]" style="cursor: pointer;">
+          <img [src]="item.obrazekUrl" [alt]="item.tytul">
+          <div class="karta-tresc">
+            <h3>{{ item.tytul }}</h3>
+            <p class="cena">{{ item.cena }} zł</p>
+          </div>
+        </div>
+        
+        <div style="padding-bottom: 20px;">
+          <button class="btn-usun-ulub" (click)="ulubioneService.usunZUlubionych(item.id)">
+            Usuń z ulubionych
+          </button>
+        </div>
+      </div>
+    } @empty {
+      <div class="brak-wynikow">
+        <p>Nie masz jeszcze żadnych ulubionych wycieczek.</p>
+        <button class="search-btn" routerLink="/oferty">Wróć do ofert</button>
+      </div>
+    }
+  </div>
+</div>

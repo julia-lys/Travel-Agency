@@ -61,7 +61,6 @@
 
 .about-list li {
   padding: 8px 0;
-  border-bottom: 1px solid var(--border-color);
   color: var(--text-secondary);
 }
 
@@ -71,6 +70,8 @@
 
 @media (max-width: 768px) {
   .about-container {
-    padding: 0 20px;
+    width: 95%;      
+    padding: 20px;  
+    margin: 15px auto;
   }
 }

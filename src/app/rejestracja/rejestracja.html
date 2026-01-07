@@ -38,10 +38,13 @@
         <label>E-mail:</label>
         <input type="email" name="email" [(ngModel)]="userData.email"
                placeholder="np. jan.kowalski@poczta.pl"
-               [class.input-error]="probowanoZarejestrowac && !userData.email">
+               [class.input-error]="probowanoZarejestrowac && (!userData.email || !isValidEmail())">
         @if (probowanoZarejestrowac && !userData.email) { 
           <span class="error-text">Pole e-mail jest wymagane</span> 
         }
+       @else if (probowanoZarejestrowac && !isValidEmail()) {
+          <span class="error-text">Wprowadź poprawny adres e-mail</span>
+  }
       </div>
 
       <div class="form-group">

@@ -27,15 +27,21 @@
   font-size: 2.2rem;
   font-weight: 500;
   color: var(--text-main);
-  text-transform: uppercase;
   margin: 0;
 }
 
-.oferty-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
-  justify-content: center;  
-  gap: 30px;
+@media (max-width: 768px) {
+  .main-container {
+    width: 95%;   
+    padding: 20px;  
+    margin: 15px auto;
+  }
+  .oferty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
+    justify-content: center;  
+    gap: 30px;
+  }
 }
 
 .karta-oferty {
@@ -99,7 +105,17 @@
   border-color: var(--accent-color);
 }
 
-.search-btn {
+.brak-wynikow {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;  
+  justify-content: center; 
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.search-btn, .showAll {
   background-color: var(--accent-color);
   color: white;
   border: none;
@@ -110,6 +126,6 @@
   transition: background 0.3s;
 }
 
-.search-btn:hover {
+.search-btn:hover, .showAll:hover {
   background-color: var(--accent-hover);
 }

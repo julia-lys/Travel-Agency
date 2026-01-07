@@ -1,1 +1,36 @@
-<p>koszyk works!</p>
+<div class="main-container">
+  <div class="bestsellery">
+    <p>Twój Koszyk</p>
+  </div>
+
+  <div class="oferty-grid">
+    @for (item of koszyk.listaElementow(); track item.id) {
+        <div class="karta-oferty">
+        <div [routerLink]="['/oferty', item.id]" style="cursor: pointer;">
+            <img [src]="item.obrazekUrl" [alt]="item.tytul">
+            <div class="karta-tresc">
+            <h3>{{ item.tytul }}</h3>
+            <p class="cena">{{ item.cena }} zł</p>
+            </div>
+        </div>
+        
+        <div style="padding-bottom: 20px;">
+            <button class="btn-usun" (click)="koszyk.usunZKoszyka(item.id)">
+            Usuń z koszyka
+            </button>
+        </div>
+    </div>
+    } @empty {
+      <div class="brak-wynikow">
+        <p>Twój koszyk jest aktualnie pusty.</p>
+        <button class="search-btn" routerLink="/oferty">Przeglądaj oferty</button>
+      </div>
+    }
+  </div>
+
+  @if (koszyk.listaElementow().length > 0) {
+    <div class="podsumowanie-koszyka">
+      <button class="search-btn">Przejdź do płatności</button>
+    </div>
+  }
+</div>

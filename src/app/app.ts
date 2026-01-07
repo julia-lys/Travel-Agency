@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-
+import { PowiadomieniaService } from './powiadomienia.service';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink],
@@ -8,8 +8,8 @@ import { RouterOutlet, RouterLink } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-isDarkMode = false;
-
+  isDarkMode = false;
+  constructor(public powiadomienia: PowiadomieniaService) {}
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
     if (this.isDarkMode) {

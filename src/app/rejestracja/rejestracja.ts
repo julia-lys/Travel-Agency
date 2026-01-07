@@ -39,10 +39,17 @@ export class Rejestracja {
     return Object.values(this.userData).every(value => value.trim() !== '');
   }
 
+  isValidEmail(): boolean {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(this.userData.email);
+  }
+
+
   utworzKonto() {
     this.probowanoZarejestrowac = true;
 
     if (!this.allFieldsFilled() || 
+       !this.isValidEmail() ||
         this.userData.haslo !== this.userData.powtorzHaslo || 
         !this.isFullAge()) {
       return;

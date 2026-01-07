@@ -1,7 +1,14 @@
 <div class="main-container search-card-style">
   <div class="search-field">
     <label>Gdzie lecimy?</label>
-    <input type="text" list="destinations" placeholder="Wpisz cel podróży...">
+    <input 
+      type="text" 
+      list="destinations" 
+      placeholder="Wpisz cel podróży..."
+      [ngModel]="frazaWpisana()"
+      (ngModelChange)="frazaWpisana.set($event)"
+      (keyup.enter)="szukaj()"
+    >
     <datalist id="destinations">
       @for (kraj of listaKrajow; track kraj) {
         <option [value]="kraj"></option>
@@ -24,22 +31,34 @@
     <input type="date">
   </div>
   
-  <button class="search-btn">Szukaj ofert</button>
+  <button class="search-btn" (click)="szukaj()">Szukaj ofert</button>
 </div>
 
+<section class="featured-section" id="wyniki">
+  <div class="main-container">
+    <div class="bestsellery">
+      @if (frazaZatwierdzona()) {
+        <p>Wyniki wyszukiwania</p>
+      } @else {
+      }
+    </div>
 
-<div class="main-container">
-   <div class="oferty-grid">
-    @for (oferta of listaOfert; track oferta.id) {
-      <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
-        <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
-        <div class="karta-tresc">
+    <div class="oferty-grid">
+      @for (oferta of filtrowaneOferty(); track oferta.id) {
+        <div class="karta-oferty" [routerLink]="['/oferty', oferta.id]">
+          <img [src]="oferta.obrazekUrl" [alt]="oferta.tytul">
+          <div class="karta-tresc">
             <h3>{{ oferta.tytul }}</h3>
             <p>{{ oferta.opisKrotki }}</p>
             <p class="cena">{{ oferta.cena }} zł</p>
           </div>
-      </div>
-    }
+        </div>
+      } @empty {
+        <div class="brak-wynikow">
+          <p>Brak ofert w wybranym kierunku.</p>
+          <button class="showAll" (click)="frazaWpisana.set(''); szukaj()">Pokaż wszystkie</button>
+        </div>
+      }
+    </div>
   </div>
-</div>
- 
+</section>

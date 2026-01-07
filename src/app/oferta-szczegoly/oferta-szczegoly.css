@@ -1,12 +1,10 @@
 .main-container {
-  /* ZMIANA: tło kontenera ze zmiennej */
   background-color: var(--card-bg);
   max-width: 1100px;         
   width: 90%;               
   margin: 30px auto;       
   padding: 40px;
   border-radius: 15px;
-  /* ZMIANA: cień dostosowany do trybu dark */
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   box-sizing: border-box;   
   transition: background-color 0.3s ease;
@@ -21,7 +19,6 @@
 
 .tytul-oferty {
   font-size: 2.2rem;
-  /* ZMIANA: kolor tytułu */
   color: var(--text-main);
   margin: 0;
   text-align: center;
@@ -43,7 +40,6 @@
 }
 
 .kafelek-cena {
-  /* ZMIANA: użycie zmiennej akcentu */
   background-color: var(--accent-color); 
   padding: 20px 40px;
   border-radius: 10px;
@@ -67,7 +63,6 @@
 }
 
 .kafelek-opis {
-  /* ZMIANA: tło wtórne (szare w jasnym, ciemniejszy szary w dark) */
   background-color: var(--secondary-bg); 
   border: 1px solid var(--border-color);
   padding: 30px;
@@ -78,16 +73,13 @@
 
 .kafelek-opis h3 {
   margin-top: 0;
-  /* ZMIANA: kolor nagłówka opisu */
   color: var(--text-main);
-  border-bottom: 2px solid var(--accent-color);
   width: fit-content;
   padding-bottom: 5px;
 }
 
 .kafelek-opis p {
   line-height: 1.7;
-  /* ZMIANA: kolor tekstu opisu */
   color: var(--text-secondary);
 }
 
@@ -99,7 +91,6 @@
 }
 
 .btn-ulubione {
-  /* ZMIANA: tło przycisku ze zmiennej kafelka */
   background: var(--card-bg);
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
