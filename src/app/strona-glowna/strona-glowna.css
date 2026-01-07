@@ -30,19 +30,14 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  .main-container {
-    width: 95%;   
-    padding: 20px;  
-    margin: 15px auto;
-  }
-  .oferty-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
-    justify-content: center;  
-    gap: 30px;
-  }
+
+.oferty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px)); 
+  justify-content: center;  
+  gap: 30px;
 }
+
 
 .karta-oferty {
   background-color: var(--card-bg);
